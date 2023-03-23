@@ -27,11 +27,11 @@
       <aside>
         <h2>Configurar Contraseña</h2>
         <form id="optionsForm">
-          <ul>
+          <!-- <ul>
             <li><a href="#">a</a></li>
             <li><a href="#">b</a></li>
             <li><a href="#">!</a></li>
-          </ul>
+          </ul> -->
           <div id="numbox">
             <label for="length">Longitud:</label>
             <input type="number" id="length" name="length" min="4" max="20" value="8">
@@ -65,7 +65,33 @@
       </aside>
  
       
-     
+     <div id="modal">
+      <form method="post" action="send-email.php">
+        <p>
+          <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+        </p>
+        
+      <p>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="mi correo es :" required>
+      
+      </p>
+       <p>
+        <label for="subject">Asunto:</label>
+        <input type="text" id="subject" name="subject" value="Encontre un error / sugerencia" disabled required>
+      
+      </p>
+        <p>
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" required></textarea>
+        
+      </p>
+        
+        <button type="submit">Enviar</button>
+      </form>
+      
+     </div>
       
     </main>
  

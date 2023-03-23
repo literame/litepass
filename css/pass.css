@@ -17,22 +17,20 @@
     background-color: #1abc9c;
     padding: 50px;
     text-align: center;
-    background: linear-gradient(to right, #1abc9c, #4CAF50);
+    /* background: linear-gradient(to right, #1abc9c, #4CAF50); */
+
+    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
     animation: gradient 5s ease infinite;
   }
   @keyframes gradient {
     0% {
-      /* background-position: 0% center; */
-      background: linear-gradient(to right, #1abc9c, #4CAF50);
+      background-position: 0% 50%; /* Inicio de la animación */
     }
-    
+    50% {
+      background-position: 100% 50%; /* La mitad de la animación */
+    }
     100% {
-      /* background-position: 100% center; */
-      background: linear-gradient(to left, #1abc9c, #4CAF50);
-    }
-    0% {
-      /* background-position: 0% center; */
-      background: linear-gradient(to right, #1abc9c, #4CAF50);
+      background-position: 0% 50%; /* Final de la animación */
     }
   }
   
@@ -263,6 +261,7 @@ li  a {
 }
 
 #modal{
+  display: none;
   position: absolute;
   top: 30%;
   left: 300px;
@@ -273,9 +272,9 @@ li  a {
   border: 1px solid gray;
   border-top: 5px solid #4CAF50;
   border-radius: 5px;
-  box-shadow: -1px -1px 5px 200px rgba(195,247,226,0.51);
--webkit-box-shadow: -1px -1px 5px 200px rgba(195,247,226,0.51);
--moz-box-shadow: -1px -1px 5px 200px rgba(195,247,226,0.51);
+  box-shadow: -1px -1px 5px 20px rgba(195,247,226,0.51);
+-webkit-box-shadow: -1px -1px 5px 20px rgba(195,247,226,0.51);
+-moz-box-shadow: -1px -1px 5px 20px rgba(195,247,226,0.51);
 }
 
 #modal form{

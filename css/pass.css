@@ -7,6 +7,9 @@
   body {
     font-family: 'Open Sans', sans-serif;
     background-color: #f2f2f2;
+    position: relative;
+    height: 100vh;
+    width: 100%;
   }
 
    /* Estilos del encabezado */
@@ -15,6 +18,22 @@
     padding: 50px;
     text-align: center;
     background: linear-gradient(to right, #1abc9c, #4CAF50);
+    animation: gradient 5s ease infinite;
+  }
+  @keyframes gradient {
+    0% {
+      /* background-position: 0% center; */
+      background: linear-gradient(to right, #1abc9c, #4CAF50);
+    }
+    
+    100% {
+      /* background-position: 100% center; */
+      background: linear-gradient(to left, #1abc9c, #4CAF50);
+    }
+    0% {
+      /* background-position: 0% center; */
+      background: linear-gradient(to right, #1abc9c, #4CAF50);
+    }
   }
   
   header h1 {
@@ -31,7 +50,7 @@
   main{
     display: flex;
     /* border: 1px solid gray; */
-    position: relative;
+    
   }
   /* Estilos del contenedor de la contraseña */
   .container {
@@ -99,9 +118,7 @@ aside {
 	border-right: 1px solid #ccc;
 	box-shadow: 0 0 10px rgba(0,0,0,0.2);
 	height: 100%;
-	/* position: fixed;
-	right: 0;
-	top: 0; */
+	
 	width: 250px;
     height: 420px;
 	z-index: 1;
@@ -150,21 +167,6 @@ button[type="submit"]:hover {
 div{
     display: flex;
 }
-
-/* #copiar{
-    width: 100px;
-    
-    height: 30px;
-    background: #b5abab;
-    color: white;
-    
-    border: none;
-    font-family: monospace;
-}
-
-#copiar:hover{
-    cursor: pointer;
-} */
 
 #copy-btn {
     padding: 10px;
@@ -260,3 +262,61 @@ li  a {
   text-decoration: none;
 }
 
+#modal{
+  position: absolute;
+  top: 30%;
+  left: 300px;
+  width: 600px;
+  height: 300px;
+  background: #f0f0f0;
+  padding: 10px 15px;
+  border: 1px solid gray;
+  border-top: 5px solid #4CAF50;
+  border-radius: 5px;
+  box-shadow: -1px -1px 5px 200px rgba(195,247,226,0.51);
+-webkit-box-shadow: -1px -1px 5px 200px rgba(195,247,226,0.51);
+-moz-box-shadow: -1px -1px 5px 200px rgba(195,247,226,0.51);
+}
+
+#modal form{
+  
+  
+  width: 100%;
+}
+
+#modal>form input{
+  width: 60%;
+  height: 30px;
+  font-family: monospace;
+}
+
+#modal>form p{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 8px 0;
+}
+
+#modal>form textarea{
+  width: 60%;
+  height: 80px;
+  padding: 5px;
+}
+
+#btnOption
+{
+display: flex;
+justify-content: right;
+
+}
+#modal>form button{
+  background-color: #1abc9c;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	padding: 10px 20px;
+	transition: background-color 0.3s ease;
+  margin: 5px;
+}

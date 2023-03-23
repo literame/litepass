@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $message = $_POST['message'];
 
   // Cambie la dirección de correo electrónico a la que desea enviar el correo electrónico
-  $to = "tudirecciondecorreo@ejemplo.com";
+  $to = "litera.me.channel@gmail.com";
   $body = "De: $name\nCorreo electrónico: $email\nAsunto: $subject\nMensaje:\n$message";
 
   // Envía el correo electrónico

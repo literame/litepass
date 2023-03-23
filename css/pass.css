@@ -109,14 +109,14 @@
       margin-bottom: 20px;
     }
 
-    aside{
+    /* aside{
       width: 250px;
       height: 420px;
       z-index: 1;
       position: absolute;
       bottom: 10px;
       left: 10px;
-    }
+    } */
   }
 
   /* Estilos de la barra lateral */

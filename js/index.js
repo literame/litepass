@@ -106,7 +106,7 @@ btnCopiarPass.addEventListener("click", function() {
     
   });
   
-const modal = document.getElementById("modal");
-  function modalSendError(){
-       
-  }
+// const modal = document.getElementById("modal");
+//   function modalSendError(){
+      // trabajando
+//   }
